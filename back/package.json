@@ -1,18 +1,16 @@
 {
-  "name": "users-api",
+  "name": "back",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch ./src/server.js"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "routes:",
   "license": "ISC",
+  "author": "alves-Moises",
   "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --watch /src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
-    "dotenv": "^18.0.9",
     "fastify": "^5.12.8",
     "uuid": "^14.0.3"
   }

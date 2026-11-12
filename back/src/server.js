@@ -1,5 +1,6 @@
 import { buildApp } from "./app.js"
 import { configDotenv } from "dotenv"
+import { db } from "./db/connection.js"
 
 configDotenv()
 const app = buildApp()
