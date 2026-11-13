@@ -1,3 +1,5 @@
+docker run -d --name mysql-senai -e MYSQL_ROOT_PASSWORD=123 -e MYSQL_DATABASE=manager -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8
+
 docker ps
 ...
 docker exec -it <id>
