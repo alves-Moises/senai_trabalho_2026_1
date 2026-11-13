@@ -1,8 +1,9 @@
 import { buildApp } from "./app.js"
 import { configDotenv } from "dotenv"
-import { db } from "./db/connection.js"
+import chalk from "chalk"
 
 configDotenv()
+
 const app = buildApp()
 
 app.listen(
@@ -12,6 +13,6 @@ app.listen(
             app.log.error(err)
             process.exit(1)
         }
-
-    console.log(`Servidor rodando em ${address}`)
+        
+        console.log(`${chalk.green(`Servidor rodando em `)} ${chalk.yellow(address)}`)
 })
