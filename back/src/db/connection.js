@@ -3,11 +3,11 @@ import chalk from 'chalk'
 
 
 export const db = await mysql.createConnection({
-    host: "localhost",
-    port:       process.env.DB_PORT,
-    user:       process.env.DB_USER,
-    password:   `${process.env.DB_PASS}`,
-    database: "manager",
+    host: "172.23.144.1",
+    port:       3306,
+    user:       "wsl_senai",
+    password:   "123",
+    database: "senai_manager",
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
