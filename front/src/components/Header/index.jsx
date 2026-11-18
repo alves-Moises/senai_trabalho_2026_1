@@ -1,7 +1,10 @@
+import { HeaderContainer } from "./style";
 
 
 export default function Header(app){
     return (
-        <>Header</>
+       <HeaderContainer>
+            <h1>equipments.etc</h1>
+       </HeaderContainer>
     )
 }
