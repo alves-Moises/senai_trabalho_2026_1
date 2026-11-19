@@ -59,18 +59,6 @@ export default function CardContainer(){
     
     return (
         <>
-            {/* {OpenModal ??
-                (<ModalUpdate 
-                    id={modalInfo.id}
-                    name={modalInfo.name}
-                    category={modalInfo.category}
-                    ns={modalInfo.ns}
-                    available={modalInfo.available}
-                    acquisition_date={modalInfo.acquisition_date}
-                    modalInfo={modalInfo}         
-
-                />)
-            } */}
             <Container>
                 {cardList.map(
                     ({
