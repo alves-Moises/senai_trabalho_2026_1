@@ -6,9 +6,9 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: stretch;
     
-    width: 264px;
+    width: 300px;
     padding: 16px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     border: 1px solid white;
     border-radius: 4px;
