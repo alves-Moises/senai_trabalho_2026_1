@@ -53,6 +53,8 @@ export default function ModalUpdate({
             })
 
             setOpenModal(false)
+            window.location.reload()
+        }
 
     }
 
