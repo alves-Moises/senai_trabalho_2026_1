@@ -30,7 +30,6 @@ export async function insertEquip(equip) {
     const query = `
         INSERT INTO equipment VALUES (?, ?, ?, ?, ?, ?)
     `
-
     const result = await db.query(
         query, 
         [
