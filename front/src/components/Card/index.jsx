@@ -48,9 +48,7 @@ export default function Card({
         await setOpenModal(true)
     }
 
-    async function closeModal(e) {        
-        setOpenModal(false)
-    }
+
     return(
         <>
             <Container>
