@@ -1,4 +1,6 @@
-import { HeaderContainer } from "./style";
+import { useEffect, useState } from "react"
+import { Container } from "./style"
+import ModalUpdate from "../ModalUpdate"
 
 export default function Header(){
     const [ OpenModal, setOpenModal ] = useState(false)
