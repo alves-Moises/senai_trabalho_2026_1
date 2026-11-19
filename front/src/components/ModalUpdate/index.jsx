@@ -68,6 +68,13 @@ export default function ModalUpdate({
                     <span className="close">&times;</span>
                 </button>
 
+                <div className="title">
+                    <h2>
+                        {method=="post"?"Add " : "Update"} 
+                        equip
+                    </h2>
+                </div>
+
                 <form onSubmit={submitEquip}>
                     <div className="field">
                         <label htmlFor="name">Name:</label>
