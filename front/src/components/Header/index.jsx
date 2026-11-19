@@ -1,10 +1,12 @@
 import { HeaderContainer } from "./style";
 
 
-export default function Header(app){
-    return (
-       <HeaderContainer>
-            <h1>equipments.etc</h1>
-       </HeaderContainer>
+    if(OpenModal){ 
+        return(
+            <ModalUpdate 
+                setOpenModal={setOpenModal}
+                method={"post"}
+            />
+        )
     )
 }
