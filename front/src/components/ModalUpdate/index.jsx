@@ -39,6 +39,9 @@ export default function ModalUpdate({
                     id: id,
                     ...data
                 }
+            ).then((res) => {
+                setModalInfo(data) 
+                alert(`${data.name} updated.`)
             }).catch((err)=>{
 
                 alert("SN already  exist")
