@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    /* border: 1px solid white ; */
+    border: 1px solid white ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,6 +13,7 @@ export const Container = styled.div`
     margin-right: auto;
 
     margin-top: 64px;
+    padding: 40px 20px;
     /* padding-left: 20px; */
     /* padding-right: 20px; */
     color: #000000;

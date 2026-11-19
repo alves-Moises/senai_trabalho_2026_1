@@ -36,6 +36,14 @@ export const Dark_blur = styled.div`
             }
         }
 
+        .title{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
         form{
             display: flex;
             flex-direction: column;
