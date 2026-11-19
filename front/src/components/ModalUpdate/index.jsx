@@ -27,8 +27,6 @@ export default function ModalUpdate({
     }, [modalInfo])
     async function submitEquip(e){
         e.preventDefault()
-
-        
         const data = Object.fromEntries(new FormData(e.currentTarget))
         
         if(method==="put"){
@@ -118,7 +116,6 @@ export default function ModalUpdate({
                         <select
                             name="available"
                             id="form_availability" 
-                            defaultValue={available}
                         >
                             <option value="true">Available</option>
                             <option value="false">Unavailable</option>
