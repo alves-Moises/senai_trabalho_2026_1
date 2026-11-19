@@ -44,6 +44,7 @@ export default function ModalUpdate({
                 { setModalInfo(data) }
             })
             setOpenModal(false)
+
         }else{
             const res = await axios.post(
                 URLBASE,
