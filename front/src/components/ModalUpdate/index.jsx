@@ -118,6 +118,7 @@ export default function ModalUpdate({
                             id="acquisition_date" 
                             name="acquisition_date" 
                             defaultValue={acquisition_date}
+                            required
                         />
                     </div>
 
