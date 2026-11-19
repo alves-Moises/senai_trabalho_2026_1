@@ -38,7 +38,8 @@ export async function insertEquip(equip) {
             name,
             category,
             ns,
-            acquisition_date
+            acquisition_date,
+            available === "true" ? true : false
         ]
     )
     return result
