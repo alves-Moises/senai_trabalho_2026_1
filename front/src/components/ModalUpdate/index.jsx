@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Dark_blur } from "./style";
+import { useEffect } from "react";
 export default function ModalUpdate({
     id="",
     name="",
