@@ -1,6 +1,7 @@
 import { HeaderContainer } from "./style";
 
 
+    useEffect(()=>{}, [OpenModal])
     if(OpenModal){ 
         return(
             <ModalUpdate 
