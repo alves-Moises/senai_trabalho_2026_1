@@ -44,7 +44,9 @@ export async function removeEquip(req, res) {
 export async function putEquip(req, res){
     const id = req.params.id 
     const data = req.body
-    const updated_equip = updateEquip(id, data)
+
+    const NS = req.body.ns
+    const hasntNS = (await getEquipByNS(NS))[0].length <= 1
 
     res.code(200).send({message: updated_equip})
 }
