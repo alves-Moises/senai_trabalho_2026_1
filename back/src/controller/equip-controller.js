@@ -48,5 +48,15 @@ export async function putEquip(req, res){
     const NS = req.body.ns
     const hasntNS = (await getEquipByNS(NS))[0].length <= 1
 
-    res.code(200).send({message: updated_equip})
+    if(hasntNS){
+        try{
+            const updated_equip = await updateEquip(id, data)
+            res.code(200).send({message: updated_equip})
+        }catch(err){
+            res.code(409).send({message: `NS ${NS} already exists`})
+        }
+    }else{
+        res.code(409).send({message: `NS ${NS} already exists`})
+    }
+
 }
