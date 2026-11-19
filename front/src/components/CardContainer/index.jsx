@@ -56,7 +56,15 @@ export default function CardContainer(){
             setOpenModal={setOpenModal}          
         />
     )}
-    
+
+    if(cardList.length == 0){
+        return(
+            <Container>
+                <h1>Empty</h1>
+            </Container>
+        )
+    }
+
     return (
         <>
             <Container>
