@@ -36,7 +36,7 @@ export default function CardContainer(){
         fetchApi()
     }, [modalInfo, modalInfo])
 
-    if(loading || cardList == []){
+    if(loading){
         return(
             <Container>
                 <h1>Loading...</h1>
