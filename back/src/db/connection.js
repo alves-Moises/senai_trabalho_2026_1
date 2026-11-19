@@ -15,7 +15,7 @@ export const db = await mysql.createConnection({
 
     // host: "localhost",
     // port:       3306,
-    // user:       "wsl_senai",
+    // user:       "root",
     // password:   "123",
     // database: "senai_manager",
     // waitForConnections: true,
