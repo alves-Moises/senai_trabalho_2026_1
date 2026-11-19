@@ -5,7 +5,7 @@ export default function ModalUpdate({
     name="",
     category="",
     ns="",
-    available="",
+    available="true",
     acquisition_date="",
     
     // id,
@@ -14,12 +14,16 @@ export default function ModalUpdate({
     // ns,
     // available,
     // acquisition_date,
+    modalInfo,
     setModalInfo="",
     setOpenModal="",
     method="put"
 }){
     const URLBASE = "http://localhost:8000/equip/"
 
+    useEffect(() => {
+
+    }, [modalInfo])
     async function submitEquip(e){
         e.preventDefault()
 
