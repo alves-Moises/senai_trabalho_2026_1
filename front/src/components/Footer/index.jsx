@@ -1,5 +1,7 @@
 export default function Footer(){
-    return(
-        <p>footer</p>
+    return (
+        <Container>
+            <p>© {new Date().getFullYear()} Alves Informatica, all rights reserved.</p>
+        </Container>
     )
 }
