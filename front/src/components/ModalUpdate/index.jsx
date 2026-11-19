@@ -25,15 +25,9 @@ export default function ModalUpdate({
 
         
         const data = Object.fromEntries(new FormData(e.currentTarget))
-        data.available = true
         
-        
-        console.log("data:")
-        console.log(data)
-
-        if(method=="put"){
-
-            const res = await axios.put(
+        if(method==="put"){
+            await axios.put(
                 `${URLBASE}${id}`,
                 {
                     id: id,
