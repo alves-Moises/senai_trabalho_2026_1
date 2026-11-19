@@ -26,7 +26,7 @@ export default function Card({
             .delete(`${URLBASE}/${equip}`)
             .then(
                 (res) => {
-                    alert(res)
+                    console.log(res)
                 }
             )
         setModalInfo({})
