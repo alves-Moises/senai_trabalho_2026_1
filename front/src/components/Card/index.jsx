@@ -21,7 +21,6 @@ export default function Card({
 
         await axios.delete(`${URLBASE}/${equip}`)
         setModalInfo({})
-        console.log(deleted)
     }
 
     async function openModal(e) {
