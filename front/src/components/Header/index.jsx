@@ -1,5 +1,7 @@
 import { HeaderContainer } from "./style";
 
+export default function Header(){
+    const [ OpenModal, setOpenModal ] = useState(false)
 
     useEffect(()=>{}, [OpenModal])
     if(OpenModal){ 
