@@ -28,7 +28,7 @@ export async function insertEquip(equip) {
     } = await {id: v4(), ...equip}  
 
     const query = `
-        INSERT INTO equipment VALUES (?, ?, ?, ?, ?)
+        INSERT INTO equipment VALUES (?, ?, ?, ?, ?, ?)
     `
 
     const result = await db.query(
