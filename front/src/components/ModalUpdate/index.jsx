@@ -76,6 +76,7 @@ export default function ModalUpdate({
                             id="name" 
                             name="name"
                             defaultValue={name}
+                            required
                         />
                     </div>
 
@@ -86,6 +87,7 @@ export default function ModalUpdate({
                             id="form_cat" 
                             name="category" 
                             defaultValue={category}
+                            required
                         />
                     </div>
 
@@ -96,6 +98,7 @@ export default function ModalUpdate({
                             id="ns" 
                             name="ns" 
                             defaultValue={ns}
+                            required
                         />
                     </div>
 
