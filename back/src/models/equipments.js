@@ -23,8 +23,9 @@ export async function insertEquip(equip) {
         name,
         category,
         ns,
-        acquisition_date
-    } = {id: v4(), ...equip}  
+        acquisition_date,
+        available
+    } = await {id: v4(), ...equip}  
 
     const query = `
         INSERT INTO equipment VALUES (?, ?, ?, ?, ?)
