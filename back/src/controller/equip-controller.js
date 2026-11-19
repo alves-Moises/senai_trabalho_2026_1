@@ -24,9 +24,9 @@ export async function getSingleEquip(req, res){
 
 export async function postEquip(req, res) {
     const NS = req.body.ns
-    const hasNS = (await getEquipByNS(NS))[0].length == 0
+    const hasntNS = (await getEquipByNS(NS))[0].length == 0
 
-    if(hasNS){
+    if(hasntNS){
         const new_equip = await insertEquip(req.body)
         res.code(201).send(new_equip)
     }else{
