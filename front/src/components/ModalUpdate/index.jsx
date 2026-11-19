@@ -47,13 +47,12 @@ export default function ModalUpdate({
         }else{
             const res = await axios.post(
                 URLBASE,
-                {...data}
-            )
+                data
+            ).catch((err)=>{
+                alert("NS already  existe")
+            })
 
-            console.log(res.status)
-            // setOpenModal(false)
-            window.location.reload()
-        }
+            setOpenModal(false)
 
     }
 
