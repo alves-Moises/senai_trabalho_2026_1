@@ -8,5 +8,12 @@ import { HeaderContainer } from "./style";
                 method={"post"}
             />
         )
+    }
+    return(
+        <Container>
+            <h1>Equipments</h1>
+
+            <button onClick={(e)=>{setOpenModal(true)}}>New equipment</button>
+        </Container>
     )
 }
