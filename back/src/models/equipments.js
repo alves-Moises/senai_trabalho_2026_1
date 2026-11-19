@@ -51,6 +51,7 @@ export async function deleteEquip(id) {
 }
 
 export async function updateEquip(id, data){
+    const query = "UPDATE equipment SET name = ?, category = ?, ns = ?, acquisition_date = ?, available = ? where id = ?"
     delete data.id
     const query = "UPDATE equipment SET name = ?, category = ?, ns = ?, acquisition_date = ? where id = ?"
     const equip = await db.query(query, [...Object.values(data), id])
