@@ -19,16 +19,7 @@ export default function Card({
     async function delEquip(e, equip){
         e.preventDefault()
 
-        if(!confirm(`Do you wannna to remove ${name}?`)){
-            return
-        }
-        const deleted = await axios
-            .delete(`${URLBASE}/${equip}`)
-            .then(
-                (res) => {
-                    console.log(res)
-                }
-            )
+        await axios.delete(`${URLBASE}/${equip}`)
         setModalInfo({})
         console.log(deleted)
     }
