@@ -14,7 +14,6 @@ export const Dark_blur = styled.div`
     background-color: #8c8c8c69;
 
     .content{
-
         background-color: #271208;
         margin: auto;
         padding: 20px;
